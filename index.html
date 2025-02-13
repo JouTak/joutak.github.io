@@ -102,24 +102,58 @@
             transform: scale(1.1);
         }
 
-        /* Адаптивность для мобильных устройств (Samsung S23 и подобные) */
-        @media (max-width: 480px) {
+        /* Адаптивность для разных устройств */
+        @media (max-width: 1024px) {
+            .content {
+                max-width: 80%;
+                font-size: 17px;
+            }
+            .btn {
+                font-size: 20px;
+                padding: 16px;
+            }
+        }
+        
+        @media (max-width: 768px) {
             header {
                 font-size: 28px;
                 padding: 30px;
             }
             .content {
-                max-width: 90%;
+                max-width: 85%;
                 font-size: 16px;
                 padding: 15px;
             }
             .btn {
-                width: 100%;
-                font-size: 20px;
-                padding: 15px;
+                width: 95%;
+                font-size: 18px;
+                padding: 14px;
             }
             .footer h2 {
                 font-size: 28px;
+            }
+            .socials img {
+                width: 60px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            header {
+                font-size: 24px;
+                padding: 25px;
+            }
+            .content {
+                max-width: 90%;
+                font-size: 14px;
+                padding: 10px;
+            }
+            .btn {
+                width: 100%;
+                font-size: 16px;
+                padding: 12px;
+            }
+            .footer h2 {
+                font-size: 24px;
             }
             .socials img {
                 width: 50px;
@@ -137,7 +171,7 @@
     <div class="content">
         <p>Привет, путник! Ты попал на визитку клуба любителей майнкрафта университета ИТМО — ITMOcraft.</p>
         <p>На наших серверах можно играть и с лицензии, и с пиратки. При этом можешь смело звать друзей, они не обязательно тоже должны быть итмошниками!</p>
-        <p>Подписывайся на наши соц.сети, а также заполняй анкету, если хочешь поиграть:</p>
+        <p>Подписывайся на наши соц.сети, а также заполняй анкету, если хочешь поиграть11:</p>
         
         <!-- Кнопка регистрации -->
         <a href="https://forms.yandex.ru/u/6501f64f43f74f18a8da28de/" class="btn">Регистрация</a>
