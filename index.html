@@ -3,33 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моя страница на GitHub Pages</title>
+    <title>ITMOcraft</title>
+    <link rel="icon" href="logo.png" type="image/png">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+        
+        /* Основные стили страницы */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Montserrat', sans-serif;
             text-align: center;
-            margin: 50px;
+            margin: 0;
+            padding: 0;
+            background: url('background.png') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
-        h1 {
-            color: #333;
+        
+        /* Стили для заголовка */
+        header {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+            padding: 40px;
+            color: white;
+            font-size: 36px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
-        p {
-            color: #666;
+        
+        /* Основной контейнер */
+        .content {
+            padding: 25px;
+            max-width: 700px;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            text-align: justify;
+            font-size: 22px;
+            font-weight: 500;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
         }
+        
+        /* Кнопка регистрации */
         .btn {
-            display: inline-block;
-            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 280px;
+            padding: 22px 35px;
+            margin: 25px auto;
             background-color: #007bff;
             color: white;
             text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
+            border-radius: 30px;
+            font-size: 24px;
+            font-weight: bold;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .btn:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        
+        /* Социальные иконки */
+        .footer {
+            padding: 35px;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer h2 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+        .socials {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+        .socials a {
+            display: inline-block;
+        }
+        .socials img {
+            width: 80px;
+            transition: transform 0.3s ease;
+        }
+        .socials img:hover {
+            transform: scale(1.1);
         }
     </style>
 </head>
 <body>
-    <h1>Привет, мир!</h1>
-    <p>Добро пожаловать на мою страницу, размещенную на GitHub Pages.</p>
-    <a href="https://github.com/твой-юзернейм" class="btn">Мой GitHub</a>
+    <!-- Заголовок -->
+    <header>
+        <h1>ITMOcraft</h1>
+    </header>
+    
+    <!-- Основной контент -->
+    <div class="content">
+        <p>Прими участие в нашем уникальном игровом событии!</p>
+        
+        <!-- Кнопка регистрации -->
+        <a href="https://forms.yandex.ru/u/6501f64f43f74f18a8da28de/" class="btn">Регистрация</a>
+    </div>
+    
+    <!-- Футер с социальными иконками -->
+    <div class="footer">
+        <h2>Контакты</h2>
+        <div class="socials">
+            <a href="https://t.me/+gcRNKRUUV31iZmVi"><img src="telegram.svg" alt="Telegram"></a>
+            <a href="https://vk.com/itmocraft"><img src="vk.svg" alt="VK"></a>
+        </div>
+    </div>
 </body>
 </html>
